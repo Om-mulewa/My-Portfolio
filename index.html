@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="content">
+            <nav>
+                <img src="images/logo.png" alt="Om" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+             <div class="header-info">
+                <p>Web Developer</p>
+                <h1>Hi I'm <span>Om</span></h1>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- -------------about--------------- -->
+     <div id="about">
+        <div class="content">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/om_bg1.JPG" alt="Om">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p> B-tech Computer Science graduate with a strong foundation in frontend development, including HTML, CSS, and JavaScript. Skilled in building responsive and user-friendly web interfaces. Hardworking, reliable, and a strong team player with excellent communication skills. Motivated to take on new challenges and contribute to successful, high-quality projects. </p>
+                    <div class="tabs">
+                        <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-link" onclick="openTab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span></li>
+                            <li>C++</li>
+                            <li>HTML, CSS</li>
+                            <li>JavaScript, React</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology in Computer Science</span> (2021-25)</li>
+                            <li>CGPA-7.06</li>
+                            <li>Medi-caps University</li>
+                            <li><span>Higher Secondary</span> (2021)</li>
+                            <li>Percentage-78.1%</li>
+                            <li>Mahesh Memorial Public School</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="projects">
+                        <ul>
+                            <li><span>Simon Says Game</span> <br> <p>
+                                This is a fun and interactive memory game built using HTML, CSS, and JavaScript. It challenges players to remember and repeat an increasingly complex sequence of colors. With each level, the difficulty increases as a new color is added to the pattern. 
+                            </p>
+                        </li>
+                        <li><span>Weather Widget</span> <br> <p>
+                                A simple and responsive weather widget built using React. It fetches real-time weather data from a public API and displays current temperature, weather conditions, and location. 
+                            </p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!--------------Portfolio-------------------->
+     <div id="portfolio">
+        <div id="portfolio-content">
+            <h1 class="about-title">My Work</h1>
+            <div class="my-work">
+                <div>
+                    <h2>Simon Says Game</h2>
+                    <p>This is a fun and interactive memory game built using HTML, CSS, and JavaScript. It challenges players to remember and repeat an increasingly complex sequence of colors.</p>
+                    <a href="#">Know more</a>
+                </div>
+
+                <div>
+                    <h2>Weather Widget</h2>
+                    <p> A simple and responsive weather widget built using React. It fetches real-time weather data from a public API and displays current temperature, weather conditions, and location.</p>
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-------------Contact Info------------->
+    <div id="contact">
+        <div class="content">
+            <div class="row">
+                <div class="column-left">
+                    <h1>Contact Me!</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ommmulewa75@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9981917630</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/om_mulewa?igsh=cmw2bHhwNG1hNWpq"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/om-mulewa-244149227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Om-mulewa"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Om Mulewa.pdf" class="btn" type="button" download> Download Resume</a>
+                </div>
+                <div class="column-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="e-mail" required>
+                        <textarea name="Message" rows="6" placeholder="your-message"></textarea> 
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                   <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="made-by">
+            <p>Keep Learning | made-by Om Mulewa</p>
+        </div>
+
+    </div>
+    
+
+     <script src="app.js"></script>
+</body>
+</html>
